@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate give-aways</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="icon" href="public/4th.png">
+        <link href="css/modal.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-custom" aria-label="Main navigation">
+        <div class="container">
+
+            <a class="navbar-brand logo-image" href="index.html"><img src="public/4th.png" alt="alternative"></a> 
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar1-collapse offcanvas-collapse "  id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="btn-solid-login">Sign in</button>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        </nav> 
+
+            <!--header-->
+            <header class="ex-header bg-custom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1"> 
+                            <div class="header-content">
+                            <h1>Corporate Give-aways</h1>
+                            <div class="group">          <!--Search Bar-->
+                                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                                    <g>
+                                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                    </g>
+                                </svg>
+                                <input placeholder="Search" type="search" class="input">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Slide Show-->
+        <div class="slideshow-wrapper">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <img src="public/ads4.png"  width="1300" height="350">
+                </div>
+
+                <div class="mySlides">
+                    <img src="public/ads1.png"  width="1300" height="350">
+                </div>
+                
+                <div class="mySlides">
+                  <img src="public/ads2.png"  width="1300" height="350">
+                </div>
+                
+                <div class="mySlides">
+                  <img src="public/ads3.png"  width="1300" height="350">
+                </div>
+                <div class="mySlides">
+                    <img src="public/ads5.png"  width="1300" height="350">
+                  </div>
+            </div>
+
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active1", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active1";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+
+
+             <!--Product Category Selected-->             
+        <div class="card-categories shadow">
+            <div class="category-select">CATEGORIES</div>
+        </div>
+        <!--Category options-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1.5">
+                    <button class="category-choice active">ALL</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">T-SHIRTS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">POLO-SHIRTS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">JACKETS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">SPORTS UNIFORM</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">BAGS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">MUGS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">CALCULATOR</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">SCHOOL SUPPLIES</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">UMBRELLA</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">TROPHIES</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">PLAQUES</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="category-choice">MEDALS</button>
+                </div>
+            </div>
+        </div>
+
+     <!--Product Cards-->
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                     Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-3">
+            <article class="card-product">
+                <div class="temporary_text">
+                    Image 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Product name</span>
+                    <span class="card_subtitle">Product description. </span>
+                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
+                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
+                        Labore minus soluta consequatur placeat.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    <!--Next Page-->
+    <div class="button-container-page">
+        <button class="next-button">
+            <span class="label">Next</span>
+            <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </span>
+        </button>
+    </div>
+
+
+            <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>About Website</h6>
+                            <p class="p-small">4th Generation has 3 services, which are <strong>goods trading</strong>, <strong>logistic services</strong>, and <strong>travel and tours</strong>.</p>
+                        </div> 
+                        <div class="footer-col second">
+                            <h6>Platform</h6>
+                            <span class="fa-stack">
+                                <a href="https://www.facebook.com/profile.php?id=100066420042675" target="_blank">
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fab fa-youtube fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <hr>
+                            <p class="p-small"><b>Copyright</b> © <b>4th Generation</b></p>
+                        </div> 
+                        <div class="footer-col third">
+                            <h6>Contact</h6>
+                            
+                            <p class="p-small">You can email us on <a href="mailto:sales.4thgeneration@gmail.com" target="_blank"><strong>sales.4thgeneration@gmail.com</strong></a></p>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/scripts.js"></script> 
+</body>
+</html>
