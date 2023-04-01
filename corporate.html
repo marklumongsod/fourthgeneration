@@ -9,6 +9,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome-all.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/styles1.css" rel="stylesheet">
         <link rel="icon" href="public/4th.png">
         <link href="css/modal.css" rel="stylesheet">
 
@@ -84,9 +85,7 @@
                 <div class="mySlides">
                   <img src="public/ads3.png"  width="1300" height="350">
                 </div>
-                <div class="mySlides">
-                    <img src="public/ads5.png"  width="1300" height="350">
-                  </div>
+
             </div>
 
                 <div style="text-align:center">
@@ -94,39 +93,19 @@
                   <span class="dot"></span> 
                   <span class="dot"></span> 
                   <span class="dot"></span> 
-                  <span class="dot"></span> 
                 </div>
         </div>
                 
-                <script>
-                let slideIndex = 0;
-                showSlides();
                 
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active1", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active1";
-                  setTimeout(showSlides, 2000); // Change image every 2 seconds
-                }
-                </script>
 
 
              <!--Product Category Selected-->             
-        <div class="card-categories shadow">
+        <!--<div class="card-categories shadow">
             <div class="category-select">CATEGORIES</div>
-        </div>
+        </div>-->
+
         <!--Category options-->
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
                 <div class="col-md-1.5">
                     <button class="category-choice active">ALL</button>
@@ -168,146 +147,136 @@
                     <button class="category-choice">MEDALS</button>
                 </div>
             </div>
-        </div>
+        </div>-->
 
-     <!--Product Cards-->
-    <div class="container">
-    <div class="row">
+        <!--Products-->
+            <section class="portfolio bg-gray" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Categories</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="filter-buttons">
+                            <ul id="filter-btns">
+                                <li class="active" data-target="all">ALL</li>
+                                <li data-target="T-Shirts">T-SHIRTS</li>
+                                <li data-target="Polo-Shirts">POLO-SHIRTS</li>
+ <!--                               <li data-target="Polo-Style">POLO-STYLE</li>-->
+                                <li data-target="Jackets">JACKETS</li>
+                                <li data-target="Sports-Uniform">SPORTS UNIFORM</li>
+                                <li data-target="Bags">BAGS</li>
+                                <li data-target="Mugs">MUGS & TUMBLERS</li>
+                                <li data-target="Calculator">CALCULATOR</li>
+                                <li data-target="Computer-Accessories">COMPUTER ACCESSORIES</li>
+                                <li data-target="Miscellaneous-Stuff">MISCELLANEOUS STUFF</li>
+                                <li data-target="Trophies">TROPHIES</li>
+                                <li data-target="Plaques">PLAQUES</li>
+                                <li data-target="Medals">MEDALS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-gallery">
+                            
+                            <div class="item" data-id="Polo-Shirts">
+                                <div class="inner">
+                                    <img src="public/poloshirt.jpg" alt="portfolio" style="width: 524px; height: 354px;">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                     Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                                </div>
+                            </div>
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                            <div class="item" data-id="T-Shirts">
+                                <div class="inner">
+                                    <img src="public/tshirts/1.png" alt="portfolio">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                                </div>
+                            </div>
+                            <div class="item" data-id="T-Shirts">
+                                <div class="inner">
+                                    <img src="public/tshirts/2.jpg" alt="portfolio">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
-    </div>
+                                </div>
+                            </div>
 
-    <div class="row">
+                            <div class="item" data-id="Mugs">
+                                <div class="inner">
+                                    <img src="public/mugs/1.png" alt="portfolio" style="width: 554px; height: 344px;">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                                </div>
+                            </div>
+                            <div class="item" data-id="Mugs">
+                                <div class="inner">
+                                    <img src="public/mugs/2.png" alt="portfolio" style="width: 424px; height: 354px;">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                                </div>
+                            </div>
+                            <div class="item" data-id="Mugs">
+                                <div class="inner">
+                                    <img src="public/mugs/1.jpg" alt="portfolio" style="width: 424px; height: 354px;">
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
+                                </div>
+                            </div>
 
-        <div class="col-md-3">
-            <article class="card-product">
-                <div class="temporary_text">
-                    Image 
-                </div>
-                <div class="card_content">
-                    <span class="card_title">Product name</span>
-                    <span class="card_subtitle">Product description. </span>
-                    <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-                        dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?
-                        Labore minus soluta consequatur placeat.</p>
-                </div>
-            </article>
-        </div>
-    </div>
-</div>
+                            <div class="item" data-id="Jackets">
+                                <div class="inner">
+                                    <img src="public/jackets/1.jpg" alt="portfolio" style="width: 360px; height: 354px;">
 
+                                </div>
+                            </div>
+
+                            <div class="item" data-id="Bags">
+                                <div class="inner">
+                                    <img src="public/bags/2.jpg" alt="portfolio">
+                                </div>
+                            </div>
+
+                            <div class="item" data-id="Bags">
+                                <div class="inner">
+                                    <img src="public/bags/3.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="item" data-id="Bags">
+                                <div class="inner">
+                                    <img src="public/bags/4.jpg" alt="portfolio" style="width: 380px; height: 354px;">
+                                </div>
+                            </div>
+
+                            <div class="item" data-id="Miscellaneous-Stuff">
+                                <div class="inner">
+                                    <img src="public/umbrella/1.png" alt="portfolio" style="width: 360px; height: 354px;">
+                                </div>
+                            </div>
+                            <div class="item" data-id="Miscellaneous-Stuff">
+                                <div class="inner">
+                                    <img src="public/umbrella/1.jpg" alt="portfolio" style="width: 380px; height: 354px;">
+                                </div>
+                            </div>
+                            <div class="item" data-id="Miscellaneous-Stuff">
+                                <div class="inner">
+                                    <img src="public/umbrella/2.jpg" alt="portfolio" style="width: 380px; height: 354px;">
+                                </div>
+                            </div>
+                            <div class="item" data-id="Miscellaneous-Stuff">
+                                <div class="inner">
+                                    <img src="public/umbrella/3.jpg" alt="portfolio" style="width: 380px; height: 354px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
     <!--Next Page-->
-    <div class="button-container-page">
+    <!--<div class="button-container-page">
         <button class="next-button">
             <span class="label">Next</span>
             <span class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
             </span>
         </button>
-    </div>
+    </div>-->
 
 
             <!-- Footer -->
@@ -351,5 +320,96 @@
         </div> 
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/scripts.js"></script> 
+
+ <!-- Slideshow -->
+        <script>
+            let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active1";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+            </script>
+
+        <!-- Products -->
+        <script>
+        const filterButtons = document.querySelector("#filter-btns").children;
+            const items = document.querySelector(".portfolio-gallery").children;
+             
+            for (let i = 0; i < filterButtons.length; i++) {
+                filterButtons[i].addEventListener("click", function () {
+                    for (let j = 0; j < filterButtons.length; j++) {
+                        filterButtons[j].classList.remove("active")
+                    }
+                    this.classList.add("active");
+                    const target = this.getAttribute("data-target")
+             
+                    for (let k = 0; k < items.length; k++) {
+                        items[k].style.display = "none";
+                        if (target == items[k].getAttribute("data-id")) {
+                            items[k].style.display = "block";
+                        }
+                        if (target == "all") {
+                            items[k].style.display = "block";
+                        }
+                    }
+             
+                })
+            }
+             </script>
+             <script>
+                var slideIndex1 = 0;
+                var slideInterval = null;
+                var slideWidth = document.getElementById("filter-btns").clientWidth;
+              
+                showSlides();
+              
+                function showSlides() {
+                  slideInterval = setInterval(function() {
+                    slideIndex1++;
+                    if (slideIndex > 1) {
+                      slideIndex1 = 0;
+                    }
+                    var slideOffset = -(slideIndex1 * slideWidth);
+                    document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
+                  }, 5000);
+                }
+              
+                document.querySelector(".prev").addEventListener("click", function() {
+                  clearInterval(slideInterval);
+                  slideIndex1--;
+                  if (slideIndex1 < 0) {
+                    slideIndex1 = 1;
+                  }
+                  var slideOffset = -(slideIndex1 * slideWidth);
+                  document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
+                  showSlides();
+                });
+              
+                document.querySelector(".next").addEventListener("click", function() {
+                  clearInterval(slideInterval);
+                  slideIndex1++;
+                  if (slideIndex1 > 1) {
+                    slideIndex1 = 0;
+                  }
+                  var slideOffset = -(slideIndex1 * slideWidth);
+                  document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
+                  showSlides();
+                });
+              </script>
+        
 </body>
 </html>
