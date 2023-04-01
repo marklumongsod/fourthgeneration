@@ -148,9 +148,9 @@
                 </div>
             </div>
         </div>-->
-
+       
         <!--Products-->
-            <section class="portfolio bg-gray" id="portfolio">
+            <section class="portfolio bg-white" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title text-center">
@@ -263,6 +263,11 @@
                                     <img src="public/umbrella/3.jpg" alt="portfolio" style="width: 380px; height: 354px;">
                                 </div>
                             </div>
+                            <div class="item" data-id="Medals">
+                                <div class="inner">
+                                    <img src="public/medals/1.jpg" alt="portfolio" style="width: 380px; height: 354px;">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -370,46 +375,7 @@ function showSlides() {
                 })
             }
              </script>
-             <script>
-                var slideIndex1 = 0;
-                var slideInterval = null;
-                var slideWidth = document.getElementById("filter-btns").clientWidth;
-              
-                showSlides();
-              
-                function showSlides() {
-                  slideInterval = setInterval(function() {
-                    slideIndex1++;
-                    if (slideIndex > 1) {
-                      slideIndex1 = 0;
-                    }
-                    var slideOffset = -(slideIndex1 * slideWidth);
-                    document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
-                  }, 5000);
-                }
-              
-                document.querySelector(".prev").addEventListener("click", function() {
-                  clearInterval(slideInterval);
-                  slideIndex1--;
-                  if (slideIndex1 < 0) {
-                    slideIndex1 = 1;
-                  }
-                  var slideOffset = -(slideIndex1 * slideWidth);
-                  document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
-                  showSlides();
-                });
-              
-                document.querySelector(".next").addEventListener("click", function() {
-                  clearInterval(slideInterval);
-                  slideIndex1++;
-                  if (slideIndex1 > 1) {
-                    slideIndex1 = 0;
-                  }
-                  var slideOffset = -(slideIndex1 * slideWidth);
-                  document.getElementById("filter-btns").style.transform = "translateX(" + slideOffset + "px)";
-                  showSlides();
-                });
-              </script>
+          
         
 </body>
 </html>
