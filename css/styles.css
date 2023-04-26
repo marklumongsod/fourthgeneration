@@ -1032,8 +1032,9 @@ h1 {
 
   .slideshow-wrapper {
 	position: relative;
-	margin-top:30px; /* adjust the margin as desired */
-	height: 400px; /* adjust the height as desired */
+	margin-top:10px; /* adjust the margin as desired */
+	height: 180px; /* adjust the height as desired */
+	
   }
   
 
@@ -1263,6 +1264,13 @@ h1 {
 	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
   }
 
+ 
+  .category-choice:hover {
+	cursor: default;  /* unclickable effect button*/
+  }
+
+
+
   /* Products*/
 
 
@@ -1286,7 +1294,7 @@ h1 {
     position: absolute;
     height: 2px;
     right: 32%;
-    background-color: #febd01;
+    background-color: #6F0148;
     bottom: 0px;
 }
 .text-center{
@@ -1295,17 +1303,17 @@ h1 {
 .text-right{
     text-align: right!important;
 }
-.portfolio{
+/*.portfolio{
     background-color: #F8F8F8;
     padding: 100px 7px;
-}
+}*/
 .portfolio .section-title h1:before{
     left: 30%;
 }
 .portfolio .filter-buttons{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .portfolio .filter-buttons ul{
     list-style: none;
@@ -1315,7 +1323,7 @@ h1 {
 .portfolio .filter-buttons ul li{
     color: #000000;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     margin: 0px 8px;
     text-transform: uppercase;
@@ -1323,8 +1331,8 @@ h1 {
     padding-bottom: 0px;
 }
 .portfolio .filter-buttons ul li.active{
-    color: #febd01;
-    border-bottom: 2px solid #febd01;
+    color: #000000;
+    border-bottom: 2px solid #17b271;
 }
 .portfolio .portfolio-gallery{
     flex: 0 0 100%;
@@ -1361,14 +1369,14 @@ h1 {
 @media(max-width:500px){
 
     .portfolio .portfolio-gallery .item{
-        flex:0 0 100% ;
+        flex:0 0 100% ;	
         max-width: 100%; }
 }
   
 
 .portfolio .filter-buttons ul li:hover{
-    color: #febd01;
-    border-bottom: 2px solid #febd01;
+    color: #000000;
+    border-bottom: 2px solid #17b271;
 }
 
 .portfolio-gallery .inner {
@@ -1399,7 +1407,9 @@ h1 {
 #filter-btns li {
     padding: 10px;
 	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
 }
+
 
 #filter-btns li:not(:last-child) {
     margin-right: 10px;
@@ -1422,8 +1432,89 @@ h1 {
 	to { opacity: 1; } /* set the final state */
   }
   
+  .background-svg {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	z-index: -1;
+  }
   
-   
+  #categories {
+	position: relative;
+	z-index: 1;
+  }
 
   
-  
+
+
+  .card1 {
+	cursor: pointer;
+	width: 1130px;
+	height: 34px;
+	background: rgb(0, 0, 0);
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 255, .2);
+	transition: all .2s;
+	box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+   }
+   
+   .card1:hover {
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	cursor: default;
+   }
+
+
+ .button-avail {
+ position: relative;
+ overflow: hidden;
+ outline: none;
+ cursor: pointer;
+ background-color: hsl(286, 97%, 15%);
+ font-family: inherit;
+}
+
+.default-btn,.hover-btn {
+ background-color: hsl(286, 97%, 15%);
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ padding: 2px 10px;
+ font-size: 15px;
+ font-weight: 300;
+ text-transform: uppercase;
+ transition: all .3s ease;
+}
+
+.hover-btn {
+ position: absolute;
+ inset: 0;
+ background-color: hsla(286, 97%, 15%, 0.774);
+ transform: translate(0%,100%);
+}
+
+.default-btn span {
+ color: hsl(0, 0%, 100%);
+}
+
+.hover-btn span {
+	color: hsl(50deg 100% 50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+button:hover .default-btn {
+ transform: translate(0%,-100%);
+}
+
+button:hover .hover-btn {
+ transform: translate(0%,0%);
+}
+
+   
