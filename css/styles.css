@@ -1270,6 +1270,198 @@ h1 {
   }
 
 
+  .category-choice1 {
+	width: 180px;
+	height: 50px;
+	border: 2px solid #000;
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin: 3px;
+	outline: none;
+	text-align: center;
+	z-index: 2;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	color: #000000;
+  }
+  
+  .category-choice1::after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+  }
+  
+  .category-choice1:hover {
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+	color: #fff;
+  }
+  .category-choice1.active {
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+				-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+	  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+	  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+	  color: #fff;
+  }
+  
+  .category-choice1:hover::after {
+	transform: scale(2) rotate(180deg);
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+  }
+
+ 
+  .category-choice1:hover {
+	cursor: default;  /* unclickable effect button*/
+  }
+
+  .category-choice2 {
+	width: 180px;
+	height: 50px;
+	border: 2px solid #000;
+	font-family: "Montserrat", sans-serif;
+	font-size: 9px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-weight: 300;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin: 3px;
+	outline: none;
+	text-align: center;
+	z-index: 2;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	color: #000000;
+  }
+  
+  .category-choice2::after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+  }
+  
+  .category-choice2:hover {
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+	color: #fff;
+  }
+  .category-choice2.active {
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+				-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+	  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+	  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+	  color: #fff;
+  }
+  
+  .category-choice2:hover::after {
+	transform: scale(2) rotate(180deg);
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+  }
+
+ 
+  .category-choice2:hover {
+	cursor: default;  /* unclickable effect button*/
+  }
+
+  .category-choice3 {
+	width: 180px;
+	height: 50px;
+	border: 2px solid #000;
+	font-family: "Montserrat", sans-serif;
+	font-size: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-weight: 300;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin: 3px;
+	outline: none;
+	text-align: center;
+	z-index: 2;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	color: #000000;
+  }
+  
+  .category-choice3::after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+  }
+  
+  .category-choice3:hover {
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+	color: #fff;
+  }
+  .category-choice3.active {
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+				-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+	  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+	  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+	  color: #fff;
+  }
+  
+  .category-choice3:hover::after {
+	transform: scale(2) rotate(180deg);
+	background: #71A500;
+	box-shadow: 4px 4px 6px 0 rgba(72, 200, 108, 0.5),
+				-4px -4px 6px 0 rgba(96, 217, 82, 0.2), 
+	  inset -4px -4px 6px 0 rgba(70, 106, 74, 0.5),
+	  inset 4px 4px 6px 0 rgba(116, 136, 118, 0.3);
+  }
+
+ 
+  .category-choice3:hover {
+	cursor: default;  /* unclickable effect button*/
+  }
+
 
   /* Products*/
 
@@ -1516,5 +1708,13 @@ button:hover .default-btn {
 button:hover .hover-btn {
  transform: translate(0%,0%);
 }
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #71A500;
+  color: #fff;
+}
+
 
    
